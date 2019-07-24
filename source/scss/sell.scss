@@ -1,0 +1,67 @@
+// Partials
+@import "partials/reset";
+@import "partials/vars";
+@import "partials/fonts";
+@import "partials/navbar";
+@import "partials/grid";
+@import "partials/hero";
+@import "partials/footer";
+
+@import "modules/base";
+
+// For this page
+body{
+  background: #eeeeee;
+}
+
+.navbar{
+  ul{
+    li{
+      a{
+        color: #000000;
+      }
+    }
+  }
+}
+.form{
+  padding: 30px;
+  background: #fff;
+  margin-top: 50px;
+  .title{
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid #EEEEEE;
+  }
+  form{
+    margin-top: 50px;
+  }
+
+  label{
+    display: block;
+  }
+  input[type="text"], input[type="number"], textarea{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #eee;
+    width: 500px;
+    padding: 10px;
+  }
+  input[type="submit"]{
+    background: #2980b9;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    outline: 0;
+    width: 500px;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+      background: #3498db;
+      transition: 0.2s;
+    }
+  }
+}
+

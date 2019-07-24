@@ -1,0 +1,51 @@
+// Partials
+@import "partials/reset";
+@import "partials/vars";
+@import "partials/fonts";
+@import "partials/navbar";
+@import "partials/grid";
+@import "partials/hero";
+@import "partials/footer";
+
+@import "modules/base";
+
+// For this page
+body{
+  background: #eeeeee;
+}
+
+.nav{
+  background: #000;
+}
+.listings{
+  padding: 30px;
+  background: #fff;
+  margin-top: 50px;
+  .title{
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid #EEEEEE;
+  }
+}
+
+.item{
+  margin-top: 50px;
+  background: #fff;
+  padding: 30px;
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  .btn{
+    background: #e74c3c;
+    padding: 10px;
+    a{
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+}
+

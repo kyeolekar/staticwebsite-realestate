@@ -1,0 +1,24 @@
+{
+  "name": "real-estate",
+  "version": "1.0.0",
+  "description": "A real estate listing website, which is made as a project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-livereload": "^0.5.3",
+    "gulp": "^3.9.0",
+    "gulp-express": "^0.3.5",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.6",
+    "gulp-webserver": "^0.9.1",
+    "jshint-stylish": "^2.0.1",
+    "tiny-lr": "^0.2.0"
+  }
+}

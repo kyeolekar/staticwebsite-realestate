@@ -1,0 +1,35 @@
+.featured{
+  text-align: center;
+  margin-top: 30px;
+  .featured-title{
+    font-size: 2em;
+    font-weight: 700;
+    // border-bottom: 1px solid #BBB8B8;
+  }
+  .thumb{
+    padding: 10px;
+    // border: 1px solid #CFCFCF;
+    img{
+      align: middle;
+      width: 250px;
+      height: 150px;
+    }
+    .title{
+      clear: both;
+      font-weight: 600;
+    }
+    .desc{
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+  .btn-info{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    a{
+      color: #2980b9;
+      text-decoration: none;
+    }
+  }
+}

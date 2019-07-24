@@ -1,0 +1,56 @@
+.listings{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 60px;
+  background: #e74c3c;
+  color: #ffffff;
+  text-align: center;
+  ul{
+    text-align: center;
+    list-style: none;
+    li{
+      text-align: center;
+      margin-right: 120px;
+      display: inline-block;
+      .title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .desc{
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+.cities{
+  .city-2{
+    margin-top: 50px;
+  }
+  margin-top: 60px;
+  .city-title{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+  }
+  .thumb{
+    padding: 10px;
+    img{
+      position: absolute;
+      width: 250px;
+      height: 150px;
+      z-index: -999;
+    }
+    color: #FFFFFF;
+    // text-align: center;
+    font-weight: 700;
+    .info{
+      margin-left: 95px;
+      margin-top: 75px;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

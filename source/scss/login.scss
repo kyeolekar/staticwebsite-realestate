@@ -1,0 +1,110 @@
+// Partials
+@import "partials/reset";
+@import "partials/vars";
+@import "partials/fonts";
+@import "partials/navbar";
+@import "partials/grid";
+@import "partials/hero";
+@import "partials/footer";
+
+@import "modules/base";
+
+// For this page
+body{
+  background: #eeeeee;
+}
+.login-container{
+  margin:0 auto;
+  width:450px;
+}
+#login{
+  border-radius:5px;
+  background:#fff;
+  width:400px;
+  height:450px;
+  margin:100px auto;
+  border:0;
+  outline:0;
+  #avatar{
+    position:absolute;
+    background:url("http://i.imgur.com/thxWbMG.jpg") #1a1a1a;;
+    //background-size:cover;
+    background-size:150px 170px;
+    width:150px;
+    height:150px;
+    margin:-75px 125px;
+    border:5px solid #fff;
+    border-radius:50%;
+  }
+  #form{
+    position:absolute;
+    margin-top:70px;
+    padding:20px;
+    .form-control{
+      margin-top:30px;
+    }
+    .form-label{
+      text-transform:uppercase;
+      color:#90A4AE;
+      font-weight:700;
+      font-size:12px;
+      letter-spacing:2px;
+    }
+    .form-forgot a,.form-forgot a:hover,.form-forgot a:visited,.form-forgot a:focus{
+      float:right;
+      color:#FF1744;
+      font-size:12px;
+      text-decoration:none;
+    }
+    .input-text{
+      margin-top:20px;
+      border:0;
+      width:340px;
+      border-bottom:2px solid #d9d7d6;
+    }
+    input:focus{
+      outline:0;
+    }
+    input[type="checkbox"]{
+      
+      //display:inline-block;
+    }
+    .form-session{
+      font-size:12px;
+    }
+    .btn{
+      
+      background:#253137;
+      padding:15px;
+      border:0;
+      outline:0;
+      width:350px;
+      //border:1px solid #253137;
+      a{
+        color:#fff;
+        text-transform:uppercase;
+        font-size:14px;
+        letter-spacing:1.2px;
+        font-weight:700;
+        text-decoration: none;
+      }
+    }
+    .btn:hover{
+      //border: 1px solid #000;
+      transition:all ease-in 0.1s;
+      background:#FF1744;
+      color:#fff;
+    }
+  }
+}
+.message{
+  display:none;
+  text-align:center;
+  color:#fff;
+  width:350px;
+  position:absolute;
+  background:#FF1744;
+  margin-top:-35px;
+  font-size:13px;
+  font-weight:100;
+}

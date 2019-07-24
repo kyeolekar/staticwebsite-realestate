@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* latin */
+@font-face {
+  font-family: 'Ovo';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ovo"), url(/assets/fonts/ovo.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/* latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Muli Light"), local("Muli-Light"), url(/assets/fonts/muli-light.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Muli"), url(/assets/fonts/muli.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(/assets/fonts/open-300.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(/assets/fonts/open-400.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(/assets/fonts/open-600.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(/assets/fonts/open-700.woff2) format("woff2");
+  unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
+
+#logo-img img {
+  width: 120px;
+  height: 90px; }
+
+.navbar {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 220px;
+  margin-top: 10px; }
+  .navbar ul {
+    list-style: none; }
+    .navbar ul li {
+      display: inline-block;
+      padding: 20px; }
+      .navbar ul li a {
+        font-weight: 700;
+        font-size: 1em;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .navbar ul li:hover {
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.2s; }
+        .navbar ul li:hover a {
+          color: #fff; }
+    .navbar ul .active {
+      background: rgba(0, 0, 0, 0.5); }
+      .navbar ul .active a {
+        color: #FFFFFF; }
+
+.row:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+.row + .row {
+  margin-top: 3%; }
+
+[class^="col-"] {
+  float: left;
+  margin-right: 3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  [class^="col-"]:last-child {
+    margin-right: 0%; }
+
+.col-1 {
+  width: 5.58333%; }
+
+.col-2 {
+  width: 14.16667%; }
+
+.col-3 {
+  width: 22.75%; }
+
+.col-4 {
+  width: 31.33333%; }
+
+.col-5 {
+  width: 39.91667%; }
+
+.col-6 {
+  width: 48.5%; }
+
+.col-7 {
+  width: 57.08333%; }
+
+.col-8 {
+  width: 65.66667%; }
+
+.col-9 {
+  width: 74.25%; }
+
+.col-10 {
+  width: 82.83333%; }
+
+.col-11 {
+  width: 91.41667%; }
+
+.col-12 {
+  width: 100%; }
+
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.hero {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/images/prop1.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+.hero-title {
+  position: relative;
+  padding-top: 25%; }
+  .hero-title .info {
+    color: #fff;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.footer {
+  padding: 50px;
+  background: #34495e;
+  color: #ffffff;
+  margin-top: 150px; }
+  .footer ul li {
+    padding-top: 10px; }
+    .footer ul li a {
+      color: #fff;
+      text-decoration: none; }
+    .footer ul li:first-child {
+      font-weight: 700; }
+
+.bottom {
+  text-align: center;
+  background: #2c3e50;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2%; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  background: #eeeeee; }
+
+.navbar ul li a {
+  color: #000000; }
+
+.form {
+  padding: 30px;
+  background: #fff;
+  margin-top: 50px; }
+  .form .title {
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid #EEEEEE; }
+  .form form {
+    margin-top: 50px; }
+  .form label {
+    display: block; }
+  .form input[type="text"], .form input[type="number"], .form textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #eee;
+    width: 500px;
+    padding: 10px; }
+  .form input[type="submit"] {
+    background: #2980b9;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    outline: 0;
+    width: 500px;
+    padding: 10px;
+    cursor: pointer; }
+    .form input[type="submit"]:hover {
+      background: #3498db;
+      transition: 0.2s; }
